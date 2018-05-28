@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "826515513718",
+    "firebase_url": "https://venture-8888e.firebaseio.com",
+    "project_id": "venture-8888e",
+    "storage_bucket": "venture-8888e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826515513718:android:8373dbf382bf1ab7",
+        "android_client_info": {
+          "package_name": "michaellin.ventureapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826515513718-i5gj3vg7inco3dphkt1un0pddb5p6qt1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "michaellin.ventureapp",
+            "certificate_hash": "c8e143d50f12227ef45172289a24449b33298771"
+          }
+        },
+        {
+          "client_id": "826515513718-0ssg8dfletrfgq74ps0dddss5p6mdish.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF1m0eVW3JYJfceEv_SiqEGlHYzS2YvJs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826515513718-0ssg8dfletrfgq74ps0dddss5p6mdish.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
