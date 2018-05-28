@@ -1,15 +1,32 @@
 <resources>
-    <string name="app_name">VentureApp</string>
-    <string name="title_activity_login">Login</string>
-    <string name="title_activity_event">Event</string>
-    <string name="title_activity_maps">Venture</string>
-    <string name="menu_settings">Settings</string>
-    <string name="menu_help">Help</string>
-    <string name="menu_exit">Exit</string>
-    <string name="menu_find">Find Events</string>
-    <string name="menu_broadcast">Broadcast</string>
-    <string name="login_username">Username</string>
-    <string name="login_password">Password</string>
+    <string name="app_name">Venture</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="textview_email">Email</string>
+    <string name="textview_password">Password</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="login_welcome">Welcome to Venture</string>
+    <string name="icon_description">Logo</string>
+    <string name="signup_welcome">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="LoginActivity_Label">Venture</string>
+    <string name="MainMenuActivity_Label">Main Menu</string>
+    <string name="CreateEventActivity_Label">Create Event</string>
+    <string name="CreateEventPicture_Descriptor">Placeholder Image</string>
+    <string name="create_address">Insert Address</string>
+    <string name="create_datetime">Insert Date and Time</string>
+    <string name="create_description">Insert Description</string>
+    <string name="create_title">Insert Title</string>
+    <string name="ViewEventActivity_Label">View Event</string>
+    <string name="placeholder">Placeholder Text</string>
+    <string name="back_button">Back</string>
+    <string name="navigate_button">Navigate To</string>
     <string name="OK">OK</string>
-    <string name="cancel">Cancel</string>
+    <string name="Cancel">Cancel</string>
+    <string name="view_title">Title</string>
+    <string name="view_address">Address</string>
+    <string name="view_datetime">Date and Time</string>
+    <string name="view_description">Description</string>
+    <string name="delete_warning">Delete account?</string>
+
 </resources>

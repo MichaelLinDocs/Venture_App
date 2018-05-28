@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="michaellin.venture_10.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="40sp"
+        android:paddingLeft="40sp"
+        android:paddingEnd="40sp"
+        android:paddingRight="40sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/login_welcome"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:contentDescription="@string/icon_description"
+            android:src="@drawable/venture" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/textview_email"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_email"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/textview_password"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_password"
+            android:inputType="textPassword"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginBottom="10sp"
+            android:windowSoftInputMode="adjustResize"/>
+        <Button
+            android:textSize="20sp"
+            android:text="@string/button_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="attemptLogin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signUp"
+            android:text="@string/signup_welcome"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

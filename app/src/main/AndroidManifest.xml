@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="michaellin.ventureapp">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="michaellin.venture_10">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -11,45 +12,43 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/venture"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/venture"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:label="@string/title_activity_login">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/LoginActivity_Label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
-        -->
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/MainMenuActivity_Label" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="michaellin.ventureapp.MainActivity" />
-        </activity>
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainMenuActivity"
+            tools:targetApi="jelly_bean" />
         <activity
-            android:name=".EventActivity"
-            android:label="@string/title_activity_event">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="michaellin.ventureapp.MapsActivity" />
-        </activity>
+            android:name=".CreateEventActivity"
+            android:label="@string/CreateEventActivity_Label"
+            android:parentActivityName=".MainMenuActivity"
+            tools:targetApi="jelly_bean" />
+
+        <activity android:name=".ViewEventActivity"
+            android:label="@string/ViewEventActivity_Label"
+            android:parentActivityName=".MapsActivity"
+            tools:targetApi="jelly_bean" />
     </application>
 
 </manifest>
